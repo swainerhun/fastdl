@@ -42,3 +42,42 @@ html, body {
     padding-top: 5%;
     font-size: 120%;
 }
+
+#lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 999;
+}
+
+.lightbox-content {
+  display: flex;
+  gap: 20px;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+#lightbox-img {
+  max-width: 70%;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.lightbox-info {
+  width: 25%;
+  background: #212529;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+.thumb{
+    cursor: pointer;
+}
