@@ -8,21 +8,13 @@
     </header>
 
     <body>
-        <header class="p-3 text-bg-dark">
-            <div class="container">
-              <div class="flex-wrap align-items-center justify-content-center justify-content-lg-start">                
-        
-                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                  <li><a href="./" class="nav-link px-5">Kezdőlap</a></li>
-                  <li><a href="./events" class="nav-link px-5 text-white">Események</a></li>
-                  <li><a href="./social" class="nav-link px-5 text-white">Kapcsolat</a></li>
-                  <li><a href="./info" class="nav-link px-5 text-white">Információk</a></li>
-                  <li><a href="./gallery" class="nav-link px-5 text-white">Galéria</a></li>
-                </ul>
-                
-              </div>
-            </div>
-          </header>
+        <div class="navi">
+          <a href="./">Kezdőlap</a>
+          <a href="./events">Események</a>
+          <a href="./social" class="active">Kapcsolat</a>
+          <a href="./info">Információk</a>
+          <a href="./gallery">Galéria</a>
+        </div>
 
           <div class="main-page">
             <h1 class="display-5 fw-bold">Elérhetőségek</h1>
@@ -37,144 +29,46 @@
                 <a href="https://discord.gg/TV728cGFCd" target="_blank">
                   <button type="button" class="btn btn-outline-secondary btn-lg px-4">Discord</button>
                 </a>
-                <a href="mailto:swainergame@gmail.com">
-                  <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Email</button>
-                </a> 
               </div>
             </div>
           </div>
 
           <div class="sec-main">
-            <h1 class="display-4 fw-bold mb-5">Saját pályánk</h1>
             
-            <div class="overflow-hidden" style="max-height: 50vh;">     
-              
-              <div id="lightbox">
-                <div class="lightbox-content">
-                  <img id="lightbox-img">
+            <div class="inputbox">
+              <h1>Üzenj nekünk!</h1>
+              <b>Ha szeretnéd felvenni velünk a kapcsolatot, akkor itt megteheted.
+                Minden mező kitöltése kötelező! Az üzenet elküldése után átirányítunk a levelezőrendszerbe.
+              </b>
 
-                  <div class="lightbox-info">
-                    <h2>TF2H FLOOF</h2>
-                    <p>Team Fortress 2 Hungary</p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a type specimen book. It has survived
-                      not only five centuries, but also the leap into electronic typesetting, remaining essentially
-                      unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-                      Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
-                      including versions of Lorem Ipsum..</p>
+              <form method="POST" enctype="multipart/form-data" id="contactForm">
 
-                    <a href="https://swainerhun.github.io/fastdl/tf/maps/TF2H_FLOOF_V1.bsp.bz2">
-                        <button type="button" class="btn btn-outline-dark me-2 btn-warning">Pálya letöltése</button>
-                    </a>
+                  <div class="inputbox">
+                      <ion-icon name="mail-outline"></ion-icon>
+                      <input type="text" id="name" required>
+                      <label for="">Név</label>
                   </div>
-                </div>
-              </div>
 
-            </div>
+                  <div class="inputbox">
+                      <ion-icon name="mail-outline"></ion-icon>
+                      <input type="text" id="subject" required>
+                      <label for="">Tárgy</label>
+                  </div>
 
-            <!-- Carousel wrapper -->
-            <div
-              id="carouselBasicExample"
-              data-mdb-carousel-init class="carousel slide carousel-fade"
-              data-mdb-ride="carousel"
-            >
-              <!-- Indicators -->
-              <div class="carousel-indicators">
-                <button data-mdb-button-init
-                  type="button"
-                  data-mdb-target="#carouselBasicExample"
-                  data-mdb-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button data-mdb-button-init
-                  type="button"
-                  data-mdb-target="#carouselBasicExample"
-                  data-mdb-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button data-mdb-button-init
-                  type="button"
-                  data-mdb-target="#carouselBasicExample"
-                  data-mdb-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-              </div>
+                  <div class="textbox">
+                      <textarea rows="7" cols="55" placeholder="Üzenet" id="message" required></textarea>
+                  </div>
 
-              <!-- Inner -->
-              <div class="gallery carousel-inner">
-                <!-- Single item -->
-                <div class="carousel-item active">
-                  <img
-                    src="img/1.png""
-                    class="thumb d-inline w-50"
-                    alt="Sunset Over the City"
-                  />
-                </div>
+                  <br>
 
-                <!-- Single item -->
-                <div class="carousel-item">
-                  <img
-                    src="img/2.png""
-                    class="thumb d-inline w-50"
-                    alt="Canyon at Nigh"
-                  />
-                </div>
+                  <button class="sendmessage" type="submit">Elküld</button>
 
-                <!-- Single item -->
-                <div class="carousel-item">
-                  <img
-                    src="img/3.png"
-                    class="thumb d-inline w-50"
-                    alt="Cliff Above a Stormy Sea"
-                  />
-                </div>
-              </div>
-              <!-- Inner -->
-
-              <!-- Controls -->
-              <button data-mdb-button-init
-                class="carousel-control-prev"
-                type="button"
-                data-mdb-target="#carouselBasicExample"
-                data-mdb-slide="prev"
-              >
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button data-mdb-button-init
-                class="carousel-control-next"
-                type="button"
-                data-mdb-target="#carouselBasicExample"
-                data-mdb-slide="next"
-              >
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-            <!-- Carousel wrapper -->
+              </form>
+          </div>
 
           </div>
 
-          <div class="third-page">
-
-            <h1 class="display-5 fw-bold mb-5">Szerver Támogatása</h1>
-
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                  <li><a href="https://steamcommunity.com/tradeoffer/new/?partner=151749910&token=BhrEmNTf" target="_blank">
-                    <img class="donate d-block mx-auto mb-5" src="img/steam.png" alt="steamlogo">
-                  </a></li>
-                  <li><a href="https://patreon.com/tf2h" target="_blank">
-                    <img class="donate d-block mx-auto mb-5" src="img/patreon.png" alt="patreonlogo">
-                  </a></li>
-            </ul>
-            
-            <div class="col-lg-6 mx-auto display-6">             
-              <p class="descript">Támogatási lehetőségek: trade-patreon</p>
-            </div>
-          </div>
+          
 
           <footer class="footer-element">
             <p>© 2025 TF2Hungary</p>
@@ -182,4 +76,5 @@
     </body>
     <script src="script.js"></script>
     <script src="mdb.min.js"></script>
+    <script src="contact.js"></script>
 </html>
