@@ -15,6 +15,17 @@ html, body {
     border-image: linear-gradient(to right, red, white, rgb(31, 107, 31)) 1;
 }
 
+.maintenance{
+    z-index: 1;
+    padding: 13rem 1.5rem;
+    text-align:center;
+    background-color: #212529;
+    color:#fff;
+    margin: 0;
+    border-top: 10px solid transparent;
+    border-image: linear-gradient(to right, red, white, rgb(31, 107, 31)) 1;
+}
+
 .third-page{
     padding: 5rem 1.5rem;
     text-align:center;
