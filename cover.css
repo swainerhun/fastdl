@@ -1,13 +1,14 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: #212529;
+   
 }
 
 .main-page{
+    z-index: 1;
     padding: 13rem 1.5rem;
     text-align:center;
-    background-color: #212529;
+    background-color: transparent;
     color:#fff;
     margin: 0;
     border-top: 10px solid transparent;
@@ -221,3 +222,14 @@ input:valid ~ label
     border-bottom: 2px solid #04aa1a;
     color: #a6ffb0;
   }
+
+  #myVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter:brightness(45%);
+}
