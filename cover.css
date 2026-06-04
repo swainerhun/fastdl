@@ -105,18 +105,25 @@ html, body {
     cursor: pointer;
 }
 
-.donate{
-  width: 200px;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  border-radius: 150px;
-  transition: all 0.5s ease;
-  padding: 20%;
+.donate {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 150px;
+    transition: all 0.5s ease;
+    padding: 0%;
 }
+
+.donating {
+    display: flex;
+    justify-content: center; /* Vagy amivel igazítod őket */
+    gap: 30px; /* Ez automatikusan pontosan 20px távolságot tesz a gombok közé */
+}
+
 
 .donate::before {
   content: '';
@@ -532,7 +539,7 @@ h1 {
 	margin: 1rem 0 0;
 }
 
-ul {
+.events {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	flex-wrap: wrap;
