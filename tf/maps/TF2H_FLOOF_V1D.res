@@ -1,5 +1,5 @@
 "Resources"
 {
-    "materials/tf2hungary/tf2hungary.vmt" "file"
-    "materials/tf2hungary/tf2hungary.vtf" "file"
+    "materials/TF2HUNGARY2/TF2HUNGARY2.vmt" "file"
+    "materials/TF2HUNGARY2/TF2Hungary.vtf" "file"
 }
